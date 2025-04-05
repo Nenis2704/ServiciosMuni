@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Servicios Municipales</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" >
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../../css/cssgeneral.css" />
+    <link rel="stylesheet" href="../../css/navFooter.css"/>
+    <link rel="icon" href="../../img/Logo.png" type="image/x-icon">
+  
+  </head>
+
+  <body>
+    <!-- barraNav -->
+    <nav class="navbar">
+      <div class="navbar-logo">
+        <a href="../../landing.html"><img src="../../img/Logo.png" alt="Logo"></a>
+      </div>
+      <div class="nav-title">
+        <h1>Montes de Oca</h1>
+        <h3>Municipalidad</h3>
+      </div>
+      <div class="nav-menu-toggle" onclick="toggleMobileNavbar()">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <button class="nav-boton-login" id="iniciarSesionButton">Iniciar Sesión</button>
+    </nav>
+    <div class="nav-links-container" id="nav-links-container">
+      <ul class="nav-links">
+        <li><a href="../../landing.html">La municipalidad</a></li>
+          <li><a href="../../perfiles/admin/adminmari.html">Servicios</a></li>
+          <li><a href="../../noticias.html">Noticias</a></li>
+          <li><a href="../../perfiles/admin/admin.html">Avisos</a></li>
+          <li>
+          <hr class="nav-divisor-m" />
+          <button class="nav-boton-login-m" id="iniciarSesionButton2">Iniciar Sesión</button>
+        </li>
+      </ul>
+    </div>
+    <!-- FIN DE barraNav -->
+
+
+    <!-- CONTENIDO -->
+
+    <div class="tituloServicios">
+      <h2>Servicios y Trámites</h2>
+      <p>Elimine y edite desde el Panel del Administrador todos los servicios actualmente publicados y lleve un registro de todas las modificaciones.</p>
+    </div>
+      
+          <!-- FILTROS -->
+          <div class="filtros">
+            <select id="filtroCategoria">
+              <option value="todos">Todas las categorías</option>
+              <option value="generales">Servicios Generales</option>
+              <option value="hacendarios">Servicios Hacendarios</option>
+              <option value="urbanos">Servicios Urbanos</option>
+            </select>
+      
+            <select id="filtroTipo">
+              <option value="todos">Todos los tipos</option>
+              <option value="pagos">Pagos</option>
+              <option value="tramites">Trámites</option>
+              <option value="consultas">Consultas/Quejas</option>
+              <option value="catastro">Catastro</option>
+              <option value="bienes">Bienes Inmuebles</option>
+              <option value="licencias">Licencias</option>
+              <option value="patentes">Cobros y morosidad</option>
+              <option value="zonificacion">Zonificacion</option>
+              <option value="recoleccionResi">Recolección de Residuos</option>
+              <option value="mantenimiento">Mantenimiento</option>
+              <option value="parques">Parques y Jardines</option>
+              <option value="alumbrado">Alumbrado Público</option>
+              <option value="ordenamiento">Ordenamiento Territorial</option>
+              <option value="controlPlagas">Control de Plagas</option>
+            </select> 
+            <input
+              type="text"
+              id="busqueda"
+              placeholder="Buscar por palabra clave..."
+            />
+          </div>
+
+          <!-- FIN -->
+    
+    <div class="titulosServ"><h1>Servicios Generales</h1></div>
+
+    <div class="serviciosPrincipales" id="mainContenidoServicios">
+      <div class="tarjetaServicios-Top">
+
+        
+        <!--INICIO tarjetaTOP 1-->
+        
+        <div class="tarjeta" id="tarjetaTop1" data-perfil="admin">
+          <div class="tarjeta-actions">
+            <i class="bi bi-pencil-square edit-icon"></i>
+            <i class="bi bi-trash delete-icon"></i>
+          </div>
+          <img src="../../img/Imagen.jpg" alt="IMG" class="tarjeta-imagen" />
+          <div class="texto">
+            <h3 class="tarjeta-title">Pagos en Línea</h3>
+            <p class="tarjeta-tarjetatexto">Agregue una descripcion breve del servicio</p>
+          </div>
+          <a href="../admin/descripcionadmin.html"><button class="tarjeta-button">
+            <p class="continuarLeyendo">
+              Seguir Leyendo <i class="bi bi-arrow-right"></i>
+            </p>
+          </button></a>
+        </div>
+        
+        <!--FIN tarjetaTOP1-->
+
+        <!--INICIO tarjetaTOP 2-->
+        <div class="tarjeta" id="tarjetaTop2"  data-perfil="admin">
+          <div class="tarjeta-actions">
+            <i class="bi bi-pencil-square edit-icon"></i>
+            <i class="bi bi-trash delete-icon"></i>
+          </div>
+          <img src="../../img/Imagen.jpg" alt="IMG" class="tarjeta-imagen" />
+          <div class="texto">
+            <h3 class="tarjeta-title">Trámites Digitales</h3>
+            <p class="tarjeta-tarjetatexto">
+              Agregue una descripcion breve del servicio
+            </p>
+          </div>
+          <a href="../admin/descripcionadmin.html"><button class="tarjeta-button">
+            <p class="continuarLeyendo">
+              Seguir Leyendo <i class="bi bi-arrow-right"></i>
+            </p>
+          </button></a>
+        </div>
+        <!--FIN tarjetaTOP2-->
+
+        <!--INICIO tarjetaTOP 3-->
+        <div class="tarjeta" id="tarjetaTop3"  data-perfil="admin">
+          <div class="tarjeta-actions">
+            <i class="bi bi-pencil-square edit-icon"></i>
+            <i class="bi bi-trash delete-icon"></i>
+          </div>
+          <img src="../../img/Imagen.jpg" alt="IMG" class="tarjeta-imagen" />
+          <div class="texto">
+            <h3 class="tarjeta-title">Consultas / Quejas</h3>
+            <p class="tarjeta-tarjetatexto">
+              Agregue una descripcion breve del servicio
+            </p>
+          </div>
+          <a href="../admin/descripcionadmin.html"><button class="tarjeta-button">
+            <p class="continuarLeyendo">
+              Seguir Leyendo <i class="bi bi-arrow-right"></i>
+            </p>
+          </button></a>
+        </div>
+        <!--FIN tarjetaTOP3-->
+      </div>
+      <!--FIN tarjeta -TOP -->
+
+      <div class="titulosServ"><h1>Servicios Hacendarios</h1></div>  
+
+      <!-- PRIMERA FILA DE SERVICIOS HACENDARIOS -->
+      <div class="tarjetaServicios">
+        
+        <div class="tarjeta" id="tarjetaBottom1"  data-perfil="admin">
+          <div class="tarjeta-actions">
+            <i class="bi bi-pencil-square edit-icon"></i>
+            <i class="bi bi-trash delete-icon"></i>
+          </div>
+          <img src="../../img/Imagen.jpg" alt="IMG" class="tarjeta-imagen" />
+          <div class="texto">
+            <h3 class="tarjeta-title">Catastro</h3>
+            <p class="tarjeta-tarjetatexto">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            </p>
+          </div>
+          <a href="../admin/descripcionadmin.html"><button class="tarjeta-button">
+            <p class="continuarLeyendo">
+              Seguir Leyendo <i class="bi bi-arrow-right"></i>
+            </p>
+          </button></a>
+        </div>
+
+        <div class="tarjeta" id="tarjetaBottom2"  data-perfil="admin">
+          <div class="tarjeta-actions">
+            <i class="bi bi-pencil-square edit-icon"></i>
+            <i class="bi bi-trash delete-icon"></i>
+          </div>
+          <img src="../../img/Imagen.jpg" alt="IMG" class="tarjeta-imagen" />
+          <div class="texto">
+            <h3 class="tarjeta-title">Bienes Inmuebles</h3>
+            <p class="tarjeta-tarjetatexto">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            </p>
+          </div>
+          <a href="../admin/descripcionadmin.html"><button class="tarjeta-button">
+            <p class="continuarLeyendo">
+              Seguir Leyendo <i class="bi bi-arrow-right"></i>
+            </p>
+          </button></a>
+        </div>
+
+        <div class="tarjeta" id="tarjetaBottom3" data-perfil="admin">
+          <div class="tarjeta-actions">
+            <i class="bi bi-pencil-square edit-icon"></i>
+            <i class="bi bi-trash delete-icon"></i>
+          </div>
+          <img src="../../img/Imagen.jpg" alt="IMG" class="tarjeta-imagen" />
+          <div class="texto">
+            <h3 class="tarjeta-title">Licencias</h3>
+            <p class="tarjeta-tarjetatexto">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+          </div>
+          <a href="../admin/descripcionadmin.html"><button class="tarjeta-button">
+            <p class="continuarLeyendo">
+              Seguir Leyendo <i class="bi bi-arrow-right"></i>
+            </p>
+          </button></a>
+        </div>
+      </div>
+
+      <!-- SEGUNDA FILA DE SERVICIOS HACENDARIOS (NUEVA FILA) -->
+      <div class="tarjetaServicios">
+        <div class="tarjeta" id="tarjetaBottom4" data-perfil="admin">
+          <div class="tarjeta-actions">
+            <i class="bi bi-pencil-square edit-icon"></i>
+            <i class="bi bi-trash delete-icon"></i>
+          </div>
+          <img src="../../img/Imagen.jpg" alt="IMG" class="tarjeta-imagen" />
+          <div class="texto">
+            <h3 class="tarjeta-title">Patentes</h3>
+            <p class="tarjeta-tarjetatexto">
+              Descripción breve del servicio de patentes municipales.
+            </p>
+          </div>
+          <a href="../admin/descripcionadmin.html"><button class="tarjeta-button">
+            <p class="continuarLeyendo">
+              Seguir Leyendo <i class="bi bi-arrow-right"></i>
+            </p>
+          </button></a>
+        </div>
+
+        <div class="tarjeta" id="tarjetaBottom5" data-perfil="admin">
+          <div class="tarjeta-actions">
+            <i class="bi bi-pencil-square edit-icon"></i>
+            <i class="bi bi-trash delete-icon"></i>
+          </div>
+          <img src="../../img/Imagen.jpg" alt="IMG" class="tarjeta-imagen" />
+          <div class="texto">
+            <h3 class="tarjeta-title">Cobros y Morosidad</h3>
+            <p class="tarjeta-tarjetatexto">
+              Información sobre pagos pendientes y cobros administrativos.
+            </p>
+          </div>
+          <a href="../admin/descripcionadmin.html"><button class="tarjeta-button">
+            <p class="continuarLeyendo">
+              Seguir Leyendo <i class="bi bi-arrow-right"></i>
+            </p>
+          </button></a>
+        </div>
+
+        <div class="tarjeta" id="tarjetaBottom6" data-perfil="admin">
+          <div class="tarjeta-actions">
+            <i class="bi bi-pencil-square edit-icon"></i>
+            <i class="bi bi-trash delete-icon"></i>
+          </div>
+          <img src="../../img/Imagen.jpg" alt="IMG" class="tarjeta-imagen" />
+          <div class="texto">
+            <h3 class="tarjeta-title">Zonificación</h3>
+            <p class="tarjeta-tarjetatexto">
+              Información sobre zonificación y regulaciones urbanísticas.
+            </p>
+          </div>
+          <a href="../admin/descripcionadmin.html"><button class="tarjeta-button">
+            <p class="continuarLeyendo">
+              Seguir Leyendo <i class="bi bi-arrow-right"></i>
+            </p>
+          </button></a>
+        </div>
+      </div>
+
+    
+    <!-- FIN DEL CONTENIDO DE SERVICIOS HACENDARIOS -->
+     <!-- TÍTULO SERVICIOS URBANOS -->
+     <div class="titulosServ"><h1>Servicios Urbanos</h1></div>  
+
+     <!-- PRIMERA FILA DE SERVICIOS URBANOS -->
+     <div class="tarjetaServicios">
+     <div class="tarjetaUrbanos">
+       <div class="tarjeta" id="tarjetaUrban1" data-perfil="admin">
+        <div class="tarjeta-actions">
+          <i class="bi bi-pencil-square edit-icon"></i>
+          <i class="bi bi-trash delete-icon"></i>
+        </div>
+         <img src="../../img/Imagen.jpg" alt="IMG" class="tarjeta-imagen" />
+         <div class="texto">
+           <h3 class="tarjeta-title">Recolección de Residuos</h3>
+           <p class="tarjeta-tarjetatexto">
+             Servicio de recolección de basura y reciclaje municipal.
+           </p>
+         </div>
+         <a href="../admin/descripcionadmin.html"><button class="tarjeta-button">
+          <p class="continuarLeyendo">
+            Seguir Leyendo <i class="bi bi-arrow-right"></i>
+          </p>
+        </button></a>
+       </div>
+      </div>
+
+       <div class="tarjeta" id="tarjetaUrban2" data-perfil="admin">
+        <div class="tarjeta-actions">
+          <i class="bi bi-pencil-square edit-icon"></i>
+          <i class="bi bi-trash delete-icon"></i>
+        </div>
+         <img src="../../img/Imagen.jpg" alt="IMG" class="tarjeta-imagen" />
+         <div class="texto">
+           <h3 class="tarjeta-title">Mantenimiento Vial</h3>
+           <p class="tarjeta-tarjetatexto">
+             Reparación de calles, aceras y señalización vial.
+           </p>
+         </div>
+         <a href="../admin/descripcionadmin.html"><button class="tarjeta-button">
+          <p class="continuarLeyendo">
+            Seguir Leyendo <i class="bi bi-arrow-right"></i>
+          </p>
+        </button></a>
+       </div>
+
+       <div class="tarjeta" id="tarjetaUrban3" data-perfil="admin">
+        <div class="tarjeta-actions">
+          <i class="bi bi-pencil-square edit-icon"></i>
+          <i class="bi bi-trash delete-icon"></i>
+        </div>
+         <img src="../../img/Imagen.jpg" alt="IMG" class="tarjeta-imagen" />
+         <div class="texto">
+           <h3 class="tarjeta-title">Parques y Jardines</h3>
+           <p class="tarjeta-tarjetatexto">
+             Mantenimiento de áreas verdes y parques municipales.
+           </p>
+         </div>
+         <a href="../admin/descripcionadmin.html"><button class="tarjeta-button">
+          <p class="continuarLeyendo">
+            Seguir Leyendo <i class="bi bi-arrow-right"></i>
+          </p>
+        </button></a>
+       </div>
+     </div>
+
+     <!-- SEGUNDA FILA DE SERVICIOS URBANOS -->
+     <div class="tarjetaServicios">
+       <div class="tarjeta" id="tarjetaUrban4" data-perfil="admin">
+        <div class="tarjeta-actions">
+          <i class="bi bi-pencil-square edit-icon"></i>
+          <i class="bi bi-trash delete-icon"></i>
+        </div>
+         <img src="../../img/Imagen.jpg" alt="IMG" class="tarjeta-imagen" />
+         <div class="texto">
+           <h3 class="tarjeta-title">Alumbrado Público</h3>
+           <p class="tarjeta-tarjetatexto">
+             Mantenimiento y reparación de alumbrado en la ciudad.
+           </p>
+         </div>
+         <a href="../admin/descripcionadmin.html"><button class="tarjeta-button">
+          <p class="continuarLeyendo">
+            Seguir Leyendo <i class="bi bi-arrow-right"></i>
+          </p>
+        </button></a>
+       </div>
+
+       <div class="tarjeta" id="tarjetaUrban5" data-perfil="admin">
+        <div class="tarjeta-actions">
+          <i class="bi bi-pencil-square edit-icon"></i>
+          <i class="bi bi-trash delete-icon"></i>
+        </div>
+         <img src="../../img/Imagen.jpg" alt="IMG" class="tarjeta-imagen" />
+         <div class="texto">
+           <h3 class="tarjeta-title">Ordenamiento Territorial</h3>
+           <p class="tarjeta-tarjetatexto">
+             Normativas para el desarrollo urbano y planificación.
+           </p>
+         </div>
+         <a href="../admin/descripcionadmin.html"><button class="tarjeta-button">
+          <p class="continuarLeyendo">
+            Seguir Leyendo <i class="bi bi-arrow-right"></i>
+          </p>
+        </button></a>
+       </div>
+
+       <div class="tarjeta" id="tarjetaUrban6" data-perfil="admin">
+        <div class="tarjeta-actions">
+          <i class="bi bi-pencil-square edit-icon"></i>
+          <i class="bi bi-trash delete-icon"></i>
+        </div>
+         <img src="../../img/Imagen.jpg" alt="IMG" class="tarjeta-imagen" />
+         <div class="texto">
+           <h3 class="tarjeta-title">Control de Plagas</h3>
+           <p class="tarjeta-tarjetatexto">
+             Programas de fumigación y control de plagas urbanas.
+           </p>
+         </div>
+         <a href="../admin/descripcionadmin.html"><button class="tarjeta-button">
+          <p class="continuarLeyendo">
+            Seguir Leyendo <i class="bi bi-arrow-right"></i>
+          </p>
+        </button></a>
+       </div>
+     </div>
+    </div>
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-top">
+        <div class="footer-info-container">
+          <img src="../../img/Logo-White.png" alt="Logo" />
+          <div class="footer-info">
+            <p>
+              <strong>Horarios de Atención:</strong> <br />Lunes a Viernes
+              <br />
+              8:00 AM - 4:00 PM
+            </p>
+            <p>
+              <strong>Central Telefónica:</strong> <br />2280-5589 / 2280-6034
+              <br />
+              2280-4751 / 2280-5025
+            </p>
+          </div>
+        </div>
+        <iframe
+          class="footer-mapa"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5071.14663629544!2d-84.05513722399955!3d9.933065274180944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0e386a01344fb%3A0xa041b8ff3f01b4c4!2sMunicipalidad%20de%20Montes%20de%20Oca!5e1!3m2!1sen!2scr!4v1741832219087!5m2!1sen!2scr"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="social-icons">
+          <a href="https://www.youtube.com/@gobmontesdeoca" target="_blank"><i class="bi bi-youtube"></i></a>
+          <a href="https://www.instagram.com/gobmontesdeoca/?hl=en" target="_blank"><i class="bi bi-instagram"></i></a>
+          <a href="https://www.facebook.com/gobmontesdeoca" target="_blank"><i class="bi bi-facebook"></i></a>
+          <a href="https://x.com/gobmontesdeoca?lang=en" target="_blank"><i class="bi bi-twitter-x"></i></a>
+        </div>
+        <hr />
+        <p>
+          Todos los derechos reservados &copy; 2018 <br />
+          Municipalidad de Montes de Oca
+        </p>
+      
+    </footer>
+    <!-- FIN DE FOOTER -->
+
+    <script type="text/javascript" src="../../js/functionsmari.js"></script>
+  </body>
+</html>
